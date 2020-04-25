@@ -18,11 +18,6 @@ public class Paddle : MonoBehaviour
     private void Awake()
     {
         manager = Camera.main.GetComponent<GameManager>();
-
-        if (!isPlayer2)
-            manager.setPlayer1(gameObject);
-        else
-            manager.setPlayer2(gameObject);
     }
 
     private void Start()

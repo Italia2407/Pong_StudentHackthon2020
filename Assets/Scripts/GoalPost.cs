@@ -13,11 +13,6 @@ public class GoalPost : MonoBehaviour
     private void Awake()
     {
         manager = Camera.main.GetComponent<GameManager>();
-
-        if (!isGoal2)
-            manager.setGoal1(gameObject);
-        else
-            manager.setGoal2(gameObject);
     }
 
     private void Start()
