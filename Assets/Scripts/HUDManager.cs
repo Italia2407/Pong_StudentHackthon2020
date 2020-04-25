@@ -9,6 +9,7 @@ public class HUDManager : MonoBehaviour
 
     public Text p1ScoreTracker;
     public Text p2ScoreTracker;
+    public Text winningScoreManager;
 
     private void Awake()
     {
@@ -19,5 +20,6 @@ public class HUDManager : MonoBehaviour
     {
         p1ScoreTracker.text = manager.Player1Score.ToString();
         p2ScoreTracker.text = manager.Player2Score.ToString();
+        winningScoreManager.text = manager.winningScore.ToString();
     }
 }
