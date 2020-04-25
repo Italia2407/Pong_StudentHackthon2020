@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public int winningScore = 7;
 
+    public bool hardMode = false;
+
     public int Player1Score { get; private set; }
     public int Player2Score { get; private set; }
 
@@ -20,11 +22,21 @@ public class GameManager : MonoBehaviour
     {
         Player1Score++;
         Reset();
+
+        if (hardMode)
+            p2.Shrink();
+        else
+            p1.Shrink();
     }
     public void P2Score()
     {
         Player2Score++;
         Reset();
+
+        if (hardMode)
+            p1.Shrink();
+        else
+            p2.Shrink();
     }
 
     private void Reset()

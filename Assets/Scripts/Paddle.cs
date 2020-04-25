@@ -40,6 +40,12 @@ public class Paddle : MonoBehaviour
         gameObject.transform.position = startingPosition;
     }
 
+    public void Shrink()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        gameObject.transform.localScale = new Vector3(currentScale.x, currentScale.y - 0.1f, currentScale.z);
+    }
+
     private float getHorizontal()
     {
         if (!isPlayer2)
