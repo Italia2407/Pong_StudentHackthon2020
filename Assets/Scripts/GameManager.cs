@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         p1.ResetPosition();
         p2.ResetPosition();
+        ball.ResetPosition();
     }
 
 }

@@ -831,6 +831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6687140791675050250, guid: 6ba8a86913299bf4c86935b413d0cf5d,
+        type: 3}
+      propertyPath: isGoal2
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ba8a86913299bf4c86935b413d0cf5d, type: 3}
 --- !u!1001 &2324595441304491686
@@ -840,6 +845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 94287183, guid: b2d4aae63204eb940ae7c24999d24752, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2324595439979646617, guid: b2d4aae63204eb940ae7c24999d24752,
         type: 3}
       propertyPath: m_LocalPosition.x
