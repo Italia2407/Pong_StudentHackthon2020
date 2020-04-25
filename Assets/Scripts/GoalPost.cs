@@ -20,8 +20,23 @@ public class GoalPost : MonoBehaviour
         goalArea = GetComponent<BoxCollider2D>();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collider Ntered!");
+
+        if (collision.gameObject.tag == "Ball")
+        {
+            if (!isGoal2)
+                manager.P2Score();
+            else
+                manager.P1Score();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collider Ntered!");
+
         if (collision.tag == "Ball")
         {
             if (!isGoal2)
