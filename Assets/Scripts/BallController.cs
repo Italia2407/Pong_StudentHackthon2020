@@ -11,28 +11,23 @@ public class BallController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetPosition();
+        /*
+        transform.position = new Vector3(0, 0, transform.position.z);
         velocity = new Vector2((Random.Range(0, 2) * 2 - 1) *StartingXVelocity, Random.Range(StartingYRange * -1f, StartingYRange));   
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        if ((transform.position.y > YBoundary && velocity.y > 0) || (transform.position.y < -1.0f * YBoundary && velocity.y < 0))
-        {
-            Debug.Log("Out of Bounds");
-            velocity = new Vector2(velocity.x, velocity.y * -1f);
-        }
-        */
         if (transform.position.x < -12.0f)
         {
             Debug.Log("Player 2 wins");
-            CreateNewPlayer();
         }
         else if (transform.position.x > 12.0f)
         {
             Debug.Log("Player 1 wins");
-            CreateNewPlayer();
         }
 
         Vector3 newPosition = new Vector3(transform.position.x + Time.deltaTime * velocity.x, transform.position.y + Time.deltaTime * velocity.y, transform.position.z);
@@ -40,14 +35,6 @@ public class BallController : MonoBehaviour
 
     }
 
-    void CreateNewPlayer()
-    {
-        /*
-        Instantiate(gameObject);
-        */
-        Destroy(gameObject);
-        
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -77,6 +64,12 @@ public class BallController : MonoBehaviour
             velocity = new Vector2(velocity.x, velocity.y * -1f);
             Debug.Log("Turn back vertical");
         }
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = new Vector3(0, 0, transform.position.z);
+        velocity = new Vector2((Random.Range(0, 2) * 2 - 1) * StartingXVelocity, Random.Range(StartingYRange * -1f, StartingYRange));
     }
 
 
