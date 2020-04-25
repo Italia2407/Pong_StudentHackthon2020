@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Paddle : MonoBehaviour
 {
+    private GameManager manager;
     private BoxCollider2D paddleBoxCollider2D;
     private Rigidbody2D paddleRigidBody2D;
 
@@ -13,6 +14,16 @@ public class Paddle : MonoBehaviour
     public float vertSpeed = 2.0f;
 
     public Vector2 startingPosition = new Vector2(0.0f, 0.0f);
+
+    private void Awake()
+    {
+        manager = Camera.main.GetComponent<GameManager>();
+
+        if (!isPlayer2)
+            manager.setPlayer1(gameObject);
+        else
+            manager.setPlayer2(gameObject);
+    }
 
     private void Start()
     {
