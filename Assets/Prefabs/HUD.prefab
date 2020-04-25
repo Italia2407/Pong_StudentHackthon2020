@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1ScoreTracker: {fileID: 3911983767077716128}
   p2ScoreTracker: {fileID: 3911983765736528261}
-  winningScoreManager: {fileID: 0}
+  winningScoreManager: {fileID: 2961369452027122266}
 --- !u!1 &3911983766911029446
 GameObject:
   m_ObjectHideFlags: 0
