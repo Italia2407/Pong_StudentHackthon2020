@@ -10,23 +10,20 @@ public class GameManager : MonoBehaviour
     public GoalPost g2;
     public BallController ball;
 
-    private int player1Score = 0;
-    private int player2Score = 0;
-
     public int winningScore = 7;
 
-    public int Player1Score { get => player1Score; }
-    public int Player2Score { get => player2Score; }
+    public int Player1Score { get; private set; }
+    public int Player2Score { get; private set; }
 
 
     public void P1Score()
     {
-        player1Score++;
+        Player1Score++;
         Reset();
     }
     public void P2Score()
     {
-        player2Score++;
+        Player2Score++;
         Reset();
     }
 
