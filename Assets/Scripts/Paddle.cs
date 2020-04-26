@@ -10,6 +10,7 @@ public class Paddle : MonoBehaviour
     private BoxCollider2D paddleBoxCollider2D;
     private Rigidbody2D paddleRigidBody2D;
 
+    public float maxVerticalRange = 5.0f;
     public bool isPlayer2 = false;
     public float vertSpeed = 2.0f;
 
@@ -33,6 +34,15 @@ public class Paddle : MonoBehaviour
     private void FixedUpdate()
     {
         paddleRigidBody2D.velocity = new Vector2(0.0f, getVertical() * vertSpeed);
+
+        if (transform.position.y > maxVerticalRange)
+        {
+            transform.position = new Vector3(transform.position.x, maxVerticalRange, transform.position.z);
+        }
+        else if (transform.position.y < -maxVerticalRange)
+        {
+            transform.position = new Vector3(transform.position.x, -maxVerticalRange, transform.position.z);
+        }
     }
 
     public void ResetPosition()

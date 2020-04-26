@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b28dcd4338fd9468260ad1b131cae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxVerticalRange: 5
   isPlayer2: 0
-  vertSpeed: 4
+  vertSpeed: 7
   startingPosition: {x: 0, y: 0}

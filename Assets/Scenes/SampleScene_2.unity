@@ -293,7 +293,8 @@ MonoBehaviour:
   g1: {fileID: 171596592626745771}
   g2: {fileID: 1440672778}
   ball: {fileID: 1023857422}
-  winningScore: 7
+  winningScore: 1
+  hardMode: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -940,6 +941,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1558444612244520252, guid: 080fbccf4eb50624e939c9593d03e4be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2961369452027122266, guid: 080fbccf4eb50624e939c9593d03e4be,
         type: 3}
       propertyPath: m_Color.g
