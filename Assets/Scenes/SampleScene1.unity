@@ -428,6 +428,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619429845 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3896750590626873239, guid: 080fbccf4eb50624e939c9593d03e4be,
+    type: 3}
+  m_PrefabInstance: {fileID: 719115801}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &719115801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -545,6 +557,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3911983766715589509, guid: 080fbccf4eb50624e939c9593d03e4be,
+        type: 3}
+      propertyPath: winningScoreManager
+      value: 
+      objectReference: {fileID: 619429845}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 080fbccf4eb50624e939c9593d03e4be, type: 3}
 --- !u!114 &829570356 stripped
@@ -571,6 +588,7 @@ GameObject:
   - component: {fileID: 968459625}
   - component: {fileID: 968459624}
   - component: {fileID: 968459627}
+  - component: {fileID: 968459628}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -661,6 +679,18 @@ MonoBehaviour:
   g2: {fileID: 1712471258}
   ball: {fileID: 94287180}
   winningScore: 7
+--- !u!114 &968459628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968459623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198a2f2c8536d7e409e5ef28a5fad49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1152814751 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -4409282670167245308, guid: 07767ebea2066944d9bb838ec7b3cb23,
