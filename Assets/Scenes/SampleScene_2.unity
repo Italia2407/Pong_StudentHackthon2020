@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -294,7 +295,7 @@ MonoBehaviour:
   g2: {fileID: 1440672778}
   ball: {fileID: 1023857422}
   winningScore: 1
-  hardMode: 1
+  hardMode: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -352,6 +353,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 198a2f2c8536d7e409e5ef28a5fad49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &610461317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -368,6 +381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: isPlayer2
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4409282670167245308, guid: 07767ebea2066944d9bb838ec7b3cb23,
+        type: 3}
+      propertyPath: maxVerticalRange
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8016033027141522000, guid: 07767ebea2066944d9bb838ec7b3cb23,
         type: 3}
