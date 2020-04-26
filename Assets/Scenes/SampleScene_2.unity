@@ -294,7 +294,7 @@ MonoBehaviour:
   g1: {fileID: 171596592626745771}
   g2: {fileID: 1440672778}
   ball: {fileID: 1023857422}
-  winningScore: 1
+  winningScore: 7
   hardMode: 0
 --- !u!20 &519420031
 Camera:
